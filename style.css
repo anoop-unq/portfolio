@@ -711,7 +711,7 @@ section .button-11 button:hover{
       outline: none;
     }
 
-    button {
+    .button-pass {
       padding: 14px;
       font-size: 1rem;
       border: none;
@@ -722,7 +722,7 @@ section .button-11 button:hover{
       transition: background 0.3s;
     }
 
-    button:hover {
+    .button-pass:hover {
       background: #0056b3;
     }
     @media (max-width: 600px) {
