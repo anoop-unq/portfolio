@@ -426,3 +426,108 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
    
+    let dark = document.querySelector(".dark-mode")
+    dark.addEventListener("click",function(){
+    // body.style.backgroundColor="#121212";
+   document.body.classList.toggle('dark')
+   let moon = document.getElementById('moon')
+  
+   document.querySelector('.auto').classList.toggle('dark')
+   document.querySelector('.title').classList.toggle('dark')
+   document.getElementById('clip-text1').classList.toggle('dark')
+   document.getElementById('clip-text').classList.toggle('dark')
+   document.getElementById('clip-text0').classList.toggle('dark')
+   document.getElementById('clip-text00').classList.toggle('dark')
+   document.getElementById('skills').classList.toggle('dark')
+
+   document.querySelector('.titleE1').classList.toggle('dark')
+   document.querySelector('.button-logic').classList.toggle('dark')
+   document.querySelector('.move-on').classList.toggle('dark')
+   document.querySelector('.title11').classList.toggle('dark')
+   document.querySelector('.title22').classList.toggle('dark')
+   document.querySelector('.title33').classList.toggle('dark')
+   document.querySelector('.title44').classList.toggle('dark')
+  let menuItems =  document.querySelectorAll('.nav-btn')
+  menuItems.forEach(menu =>{
+    menu.classList.toggle('dark')
+  })
+
+
+
+  //  document.querySelectorAll('.label').classList.toggle('dark')
+   let labelit = document.querySelectorAll('.label')
+   labelit.forEach(label => {
+     label.classList.toggle('dark');
+   })
+
+   let pro = document.querySelectorAll('.project-card')
+   pro.forEach(proplayer =>{
+    proplayer.style.borderRadius="9px"
+    proplayer.style.border="none"
+   })
+   let contactsection= document.querySelector('.contact-section')
+   contactsection.style.margin="11px"
+   contactsection.style.borderRadius="9px"
+   contactsection.style.border="none"
+      //  <i class="fa-duotone fa-solid fa-moon" id="moon"></i>
+    })
+
+
+        let darkman = document.querySelector(".dark-mode-1")
+    darkman.addEventListener("click",function(){
+    // body.style.backgroundColor="#121212";
+   document.body.classList.toggle('dark')
+   let moon = document.getElementById('moon')
+  
+   document.querySelector('.auto').classList.toggle('dark')
+   document.querySelector('.title').classList.toggle('dark')
+   document.getElementById('clip-text1').classList.toggle('dark')
+   document.getElementById('clip-text').classList.toggle('dark')
+   document.getElementById('clip-text0').classList.toggle('dark')
+   document.getElementById('clip-text00').classList.toggle('dark')
+   document.getElementById('skills').classList.toggle('dark')
+
+   document.querySelector('.titleE1').classList.toggle('dark')
+   document.querySelector('.button-logic').classList.toggle('dark')
+   document.querySelector('.move-on').classList.toggle('dark')
+   document.querySelector('.title11').classList.toggle('dark')
+   document.querySelector('.title22').classList.toggle('dark')
+   document.querySelector('.title33').classList.toggle('dark')
+   document.querySelector('.title44').classList.toggle('dark')
+  let menuItems =  document.querySelectorAll('.nav-btn')
+  menuItems.forEach(menu =>{
+    menu.classList.toggle('dark')
+  })
+
+  let menuItemsE1 =  document.querySelectorAll('.nav-btn-22')
+  menuItemsE1.forEach(menu =>{
+    menu.classList.toggle('dark')
+  })
+  
+
+
+
+  //  document.querySelectorAll('.label').classList.toggle('dark')
+   let labelit = document.querySelectorAll('.label')
+   labelit.forEach(label => {
+     label.classList.toggle('dark');
+   })
+
+   let pro = document.querySelectorAll('.project-card')
+   pro.forEach(proplayer =>{
+    proplayer.style.borderRadius="9px"
+    proplayer.style.border="none"
+   })
+   let contactsection= document.querySelector('.contact-section')
+   contactsection.style.margin="11px"
+   contactsection.style.borderRadius="9px"
+   contactsection.style.border="none"
+
+
+
+
+   
+
+
+      //  <i class="fa-duotone fa-solid fa-moon" id="moon"></i>
+    })

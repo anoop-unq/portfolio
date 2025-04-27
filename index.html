@@ -21,11 +21,11 @@
     <div class="navbar">
       <div class="logo"><a href="#">Anoop.</a></div>
         <ul class="menu" id="menuBook">
-          <li><a class="nav-btn" href="#home">Home</a></li>
-          <li><a class="nav-btn" href="#about">About me</a></li>
-          <li><a class="nav-btn" href="#skills">Skills</a></li>
-          <li><a class="nav-btn" href="#services">Projects</a></li>
-          <li><a class="nav-btn" href="#contact">Contact</a></li>
+          <li ><a class="nav-btn" href="#home">Home</a></li>
+          <li ><a class="nav-btn" href="#about">About me</a></li>
+          <li ><a class="nav-btn" href="#skillless">Skills</a></li>
+          <li ><a class="nav-btn" href="#services">Projects</a></li>
+          <li ><a class="nav-btn" href="#contact">Contact</a></li>
           <div class="media-icon" id="socialMedia">
             <a class="nav-btn-1" href="#"><i class="fab fa-facebook-f"></i></a>
             <a class="nav-btn-1" href="#"><i class="fab fa-twitter"></i></a>
@@ -36,14 +36,14 @@
             <i class="fas fa-times"></i>
           </div>
         </ul>
-        <div class="dark-mode">
+        <div class="dark-mode oneSide">
           <i class="fa-duotone fa-solid fa-moon" id="moon"></i>
         </div>
         <div class="media-icons">
-          <a href="#"><i class="light fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <div class="dark-mode-1">
+          <a class="nav-btn-22" href="#"><i class="light fab fa-facebook-f"></i></a>
+          <a class="nav-btn-22" href="#"><i class="fab fa-twitter"></i></a>
+          <a class="nav-btn-22" href="#"><i class="fab fa-instagram"></i></a>
+          <div class="dark-mode-1 oneSide">
             <i class="fa-duotone fa-solid fa-moon" id="moon"></i>
           </div>
         </div>
@@ -72,12 +72,12 @@
       </div>
 
 
-      <div class="button bounce-in-top" >
-
-        <button class="click-button">Hire Me</button>
+      <div class="button bounce-in-top samesideE1" >
+        
+        <button class="button-logic">Hire Me</button>
         
         <div class="social-links">
-        <a href="#"><i class="skill fa-brands fa-github"></i></a>
+        <a href="#"><i class="skill fa-brands fa-github anchor"></i></a>
         <a href="#"><i class="skill fa-brands fa-linkedin"></i></a>
         </div>
 
@@ -98,9 +98,9 @@
   </div>
 
    </section>
-   <section class="aboutMe" id="aboutme">
+   <section class="aboutMe" id="about">
     <div class="content">
-      <div class="title"><span>About Me</span></div>
+      <div class="title"><span class="titleE1">About Me</span></div>
       <div class="about-details">
         <div class="left" id="other">
           <img src="amana.jpg" alt="" class="logo-image" id="over"/>
@@ -122,9 +122,9 @@
 
    </section>
 
- <section class="aboutMe" id="aboutme">
+ <section class="aboutMe" id="skillless">
       <div class="content">
-      <div class="title"><span>Skills</span></div>
+      <div class="title"><span class="title11">Skills</span></div>
       </div>
         <div id="skills">
     <div id="front-end-skills">
@@ -134,12 +134,12 @@
     </div>
 
     <div class="skill-bar" data-aos="fade-up" data-aos-delay="100" data-percent="90">
-      <div class="label">CSS <span class="percent">0%</span></div>
+      <div class="label ls">CSS <span class="percent">0%</span></div>
       <div class="bar"><div class="fill"></div></div>
     </div>
 
     <div class="skill-bar" data-aos="fade-up" data-aos-delay="100" data-percent="95">
-      <div class="label">Bootstrap <span class="percent">0%</span></div>
+      <div class="label ls">Bootstrap <span class="percent">0%</span></div>
       <div class="bar"><div class="fill"></div></div>
     </div>
 
@@ -178,9 +178,9 @@
   </div>
   </section>
 
-   <section class="aboutMe" id="aboutme">
+   <section class="aboutMe" id="services">
     <div class="content">
-      <div class="title"><span>Projects</span></div>
+      <div class="title"><span class="title22">Projects</span></div>
       </div>
       <div class="carousel-projectSlide">
       
@@ -207,20 +207,20 @@
      
   </section>
 
-    <section class="aboutMe" id="aboutme">
+    <section class="aboutMe" id="contactme">
     <div class="content">
-      <div class="title"><span>Contact Me</span></div>
+      <div class="title"><span class="title33">Contact Me</span></div>
       </div>
    <div class="contact-section" id="contact" data-aos="fade-up">
-    <h2>Contact Me</h2>
+    <h2 class="title44">Hire Me</h2>
     <form action="https://formspree.io/f/mvgaoykd" method="POST">
       <input type="text" name="name" placeholder="Your Name" required data-aos="fade-right" data-aos-delay="100">
       <input type="email" name="email" placeholder="Your Email" required data-aos="fade-left" data-aos-delay="200">
       <textarea name="message" rows="5" placeholder="Your Message" required data-aos="fade-up" data-aos-delay="300"></textarea>
-      <button type="submit" data-aos="zoom-in" data-aos-delay="400" class="button-pass">Send Message</button>
+      <button type="submit" data-aos="zoom-in" data-aos-delay="400">Send Message</button>
     </form>
   </div>
-      
+   </section>   
 <!-- </div> -->
  <script>
   AOS.init();

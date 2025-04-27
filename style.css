@@ -11,7 +11,7 @@
 }
 body{
   /* height: 1000px; */
-  overflow-x: hidden;
+  overflow-x: hidden!important;
 }
   :root {
     --bg: #ffffff;
@@ -22,7 +22,57 @@ body{
     --bg: #121212;
     --text: #f5f5f5;
   }
-
+  .auto.dark{
+    color:  #f5f5f5;
+  }
+  .title.dark{
+    color:  #f5f5f5;
+  }
+  .titleE1.dark{
+    color:  #f5f5f5;
+  }
+  #clip-text.dark{
+    color:  #f5f5f5;
+  }
+  #clip-text0.dark{
+    color:  #f5f5f5;
+  }
+  #clip-text1.dark{
+    color:  #f5f5f5;
+  }
+  #clip-text00.dark{
+    color: #f5f5f5;
+  }
+  .button-logic.dark{
+    color: #fff;
+  }
+  .move-on.dark{
+    background-color: #ffffff;
+  }
+  .title11.dark{
+    color: #f5f5f5;
+  }
+   .title22.dark{
+    color: #f5f5f5;
+  }
+   .title33.dark{
+    color: #f5f5f5;
+  }
+   .title44.dark{
+    color: #000000;
+  }
+  #skills.dark{
+    background-color:var(--bg);
+  }
+  .label.dark{
+    color: #f5f5f5;
+  }
+  .navbar .menu a.dark{
+    color: #ffffff;
+  }
+   .navbar .media-icons a.dark{
+    color: #ffffff;
+  }
   body {
     background-color: var(--bg);
     color: var(--text);
@@ -331,6 +381,97 @@ transform: translateX(0);
   /* transform: translateX(-100%); */
 }
 
+
+
+.samesideE1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 11px;
+}
+
+.button-logic {
+  position: relative;
+  padding: 14px 5px;
+  font-size: 18px;
+  font-weight: 750;
+  color: #000000;
+  background: transparent;
+  border: 2px solid #b3b6b6;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+  margin-top: 7px;
+}
+@media (min-width:420px) {
+  .button-logic {
+  position: relative;
+  padding: 14px 15px;
+  font-size: 23px;
+  font-weight: 750;
+  color: #000000;
+  background: transparent;
+  border: 1px solid #d3d6d7;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+  margin-top: 7px;
+}
+}
+.button-logic::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #00d1ff, #7efff5);
+  transition: left 0.4s ease;
+  z-index: -1;
+  box-shadow: 0 0 20px 10px rgb(0, 0, 0,0.0.5);
+  border: 1px solid rgb(238, 235, 235);
+}
+
+.button-logic::after {
+  content: '';
+  position: absolute;
+  top: -2px; left: -2px;
+  right: -2px; bottom: -2px;
+  background: linear-gradient(45deg, #00d1ff, #ff00ff, #00ffae, #ffc800);
+  background-size: 300%;
+  filter: blur(8px);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -2;
+  border-radius: 12px;
+}
+
+.button-logic:hover {
+  color: #ffffff;
+  border: none;
+  outline: none;
+}
+
+.button-logic:hover::before {
+  left: 0;
+}
+
+.button-logic:hover::after {
+  opacity: 1;
+  animation: logicGlow 2s linear infinite;
+}
+
+@keyframes logicGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
 #clip-text{
   background: linear-gradient(to right, #449f54 0%, #0026ff 100%);
   background-size: cover;
@@ -365,9 +506,11 @@ transform: translateX(0);
 }
 .button{
   display: flex;
+  display: grid;
+  grid-template-columns: 32% auto auto ;
   /* justify-content: center; */
   align-items: center;
-  gap: 1.7rem;
+  gap: 1rem;
   /* overflow: hidden; */
 }
 .social-links{
@@ -421,7 +564,8 @@ transform: translateX(0);
   display: none;
 }
 section{
-  padding-top: 40px;
+  /* padding-top: 40px; */
+  scroll-margin-top: 100px;
 }
 section .content{
   width: 80%;
@@ -696,7 +840,7 @@ section .button-11 button:hover{
       display: grid;
       gap: 20px;
     }
-
+   
     input, textarea {
       width: 100%;
       padding: 14px;
@@ -711,7 +855,7 @@ section .button-11 button:hover{
       outline: none;
     }
 
-    .button-pass {
+    button {
       padding: 14px;
       font-size: 1rem;
       border: none;
@@ -722,7 +866,7 @@ section .button-11 button:hover{
       transition: background 0.3s;
     }
 
-    .button-pass:hover {
+    button:hover {
       background: #0056b3;
     }
     @media (max-width: 600px) {
@@ -760,6 +904,17 @@ section .button-11 button:hover{
 
     .project-links a:hover {
       color: #0056b3;
+    }
+    #contactme{ 
+      width: 80%;
+      margin: auto;
+    }
+   
+    @media (min-width:900px) {
+      #contactme{
+        width: 70%;
+        margin: auto;
+    }
     }
 @media (max-width:1200px) {
   .slide-in-left {
@@ -1515,6 +1670,9 @@ section .button-11 button:hover{
     transition: all 0.4s ease;
     position: relative;
   }
+ .navbar .menu a .nav-btn-22.dark{
+  color: #f5f5f5;
+ }
   .nav-btn::after{
     content: '';
     position: absolute;
